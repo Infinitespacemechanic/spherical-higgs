@@ -12,7 +12,7 @@ This is not "just geometry" - it's type-checked.
 Mechanical Higgs excess:
 
 ```
-1 + 1 = 2 + 0.0472
+1 + 1.0472 = 2 + 0.0472
 1.0472 = 1 + 0.0472 = π/3 = 60°
 1.0472 mod 1 = 0.0472 = Δ_H (odd duck)
 6 × 1.0472 = 2π = 360°
