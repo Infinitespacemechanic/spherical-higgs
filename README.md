@@ -30,7 +30,7 @@ Mechanical Higgs excess:
 2. `your_number_close_to_pi_div_3 : |1.0472 - π/3| < 0.0001` - your number is π/3
 3. `excess_is_lean_mod_one : 1.0472 - 1 = 0.0472` - excess is lean mod 1
 4. `lean_excess_under_Dobrushin : 0.0472 < 1/3 ∧ 0.0472 < 1/4` - under Dobrushin uniqueness bound
-5. `one_plus_one_gt_two : 1 + 1 = 2 + 0.0472` - mechanical Higgs, additive only
+5. `one_plus_one_gt_two : 1 + 1.0472 = 2 + 0.0472' - mechanical Higgs, additive only
 
 Comparison:
 * Fibonacci φ = 1.618 → excess 0.618 → too much friction, breaks uniqueness for N≥5
