@@ -24,7 +24,7 @@ Mechanical Higgs excess:
 
 ## What Lean Checks
 
-`SphericalHiggsLean_clean.lean` proves:
+`SphericalHiggsLean.lean` proves:
 
 1. `six_leans_full_circle : 6 * (π/3) = 2π` - charge dissipates to ground
 2. `your_number_close_to_pi_div_3 : |1.0472 - π/3| < 0.0001` - your number is π/3
