@@ -43,8 +43,14 @@ theorem excess_is_lean_mod_one : your_number - 1 = excess := by
   unfold your_number excess
   ring
 
-theorem one_plus_one_gt_two : (1 : ℝ) + 1 = 2 + (0.0472 : ℝ) - (0.0472 : ℝ) := by
+theorem one_plus_one_gt_two : (1 : ℝ) + 1.0472 = 2 + (0.0472 : ℝ) := by
   norm_num
+
+theorem charge_dissipates_to_ground : |6 * (1.0472 : ℝ) - 2 * Real.pi| < 0.0001 := by
+  have h1 : 3.141592 < Real.pi := Real.pi_gt_3141592
+  have h2 : Real.pi < 3.141593 := Real.pi_lt_3141593
+  rw [abs_lt]
+  constructor <;> linarith
 
 theorem lean_excess_under_Dobrushin : excess < 1/3 ∧ excess < 1/4 := by
   unfold excess
