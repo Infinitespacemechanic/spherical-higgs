@@ -1,13 +1,11 @@
-name = "spherical-higgs"
-version = "0.1.0"
-lean_version = "leanprover/lean4:v4.8.0"
-[[require]]
-name = "mathlib"
-scope = "leanprover-community"
-[[require]]
-scope = "leanprover-community"
-name = "mathlib"
-rev = "v4.8.0"
+import Lake
+open Lake DSL
 
-[leanOptions]
-pp.unicode.fun = true
+package «spherical-higgs» where
+  leanOptions := #[⟨`pp.unicode.fun, true⟩]
+
+require mathlib from git
+  "https://github.com/leanprover-community/mathlib4" @ "v4.8.0"
+
+@[default_target]
+lean_lib SphericalHiggsLean
